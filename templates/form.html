@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask_Project</title>
+</head>
+
+<body>
+<h1> Create Post </h1>
+<form method ="POST">
+    <div>
+        <label for="name"> Enter Your Name: </label>
+        <input type="text" name="name"/>
+    </div>
+    <br/>
+    <div>
+    <label for="about"> About : </label>
+    <input type="text" name="about"/>
+    </div>
+    <br/>
+        <div>
+            <input type="submit"/>
+        </div>
+<a href="{{url_for('home')}}">Click here for HOME page</a>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+<body>
+{% block content %}
+<h1> Welcome to my Blog</h1>
+<h2> Posts <h2>
+<ul>
+    {% for post_id, post in posts.items() %}
+        <li><a href="{{ url_for('post', post_id=post_id) }}">{{ post['name'] }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+<a href="{{url_for('create')}}">create an account</a>
+</body>
+</head>
+</html>
+

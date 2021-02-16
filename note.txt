@@ -1,0 +1,16 @@
+Flask -> a library used to create a website.
+
+jinja2 -> a engine that drive the template engine.
+    it is used when we don't want repeatation of code.
+
+ method POST : method post is used the form is going to package up this information
+    and its gonna attach it to hidden payload in the request.
+
+ method GET : GET request does not have data payload.
+
+
+ in jinja2
+ -> to extend the jinja file
+ {% extends 'base.jinja2' %}
+
+ .items() is used to get all the content.
